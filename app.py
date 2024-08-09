@@ -17,7 +17,7 @@ def generate_music(input_sequence):
     midi_output = convert_to_midi(predictions)
     
     # Save the MIDI file
-    midi_file_path = "generated_music.mid"
+    midi_file_path = "music.mid"
     with open(midi_file_path, "wb") as f:
         midi_output.writeFile(f)
     
